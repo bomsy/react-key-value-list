@@ -1,0 +1,18 @@
+.KeyList .Item {
+  width: 100%;
+}
+.KeyList .Item input {
+  width: 172px;
+  height: 20px;
+  margin-right: 5px;
+}
+.KeyList .Item button {
+  width: 30px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  color: #666;
+  border-color: #fff;
+}

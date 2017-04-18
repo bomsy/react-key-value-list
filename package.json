@@ -1,0 +1,44 @@
+{
+  "name": "react-key-value-list",
+  "version": "0.1.0",
+  "description": "A key value list react component",
+  "main": "build/react-kv-list.js",
+  "keywords": [
+    "react",
+    "key-value",
+    "list",
+    "ui",
+    "react-component"
+  ],
+  "author": "Hubert B Manilla <b4bomsy@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/bomsy/react-key-value-list",
+  "scripts": {
+    "start": "node scripts/server.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "bugs": {
+    "url": "https://github.com/bomsy/react-key-value-list/issues"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
