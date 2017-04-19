@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './react-kv-list.css';
+//import './react-kv-list.css';
 
 class KeyList extends Component {
   constructor(props) {

@@ -7,17 +7,20 @@ module.exports =  {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
   output: {
     path: path.resolve(__dirname, 'examples'),
     publicPath: '/examples/',
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     loaders: [{
-      test: /\*.js/,
-      loaders: ['react-hot', 'babel'],
+      test: /\.js$/,
+      loader: ['react-hot-loader', 'babel-loader'],
       exclude: /build|scripts|node_modules/
     }]
   }

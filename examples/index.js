@@ -1,7 +1,7 @@
 import react from 'react';
 import ReactDOM from 'react-dom';
 
-import KeyValueList from '../src/react-kv-list';
+import KeyList from '../src/react-kv-list';
 
 class KeyValueListExample extends Component {
   constructor(props) {
@@ -18,10 +18,12 @@ class KeyValueListExample extends Component {
    }
 
   render() {
-    <div>
-      <label>Tags</label>
-      <KeyList items={this.state.tags} onItemChanged={this.onTagChange}/>
-    </div>
+    return (
+      <div>
+        <label>Tags</label>
+        <KeyList items={this.state.tags} onItemChanged={this.onTagChange}/>
+      </div>
+    );
   }
 }
 
