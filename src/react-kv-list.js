@@ -51,13 +51,13 @@ class KeyList extends Component {
             <input
               className="key"
               value={item.key}
-              placeholder=" -- key --"
+              placeholder=" -- enter key --"
               onChange={event => this.handleChange(event, index, "key")}
             />
             <input
               className="value"
               value={item.value}
-              placeholder=" -- value --"
+              placeholder=" -- enter value --"
               onChange={event => this.handleChange(event, index, "value")}
             />
             {index === 0
