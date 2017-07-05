@@ -1,27 +1,29 @@
-var path = require('path');
-var webpack = require('webpack');
+var path = require("path");
+var webpack = require("webpack");
 
-module.exports =  {
+module.exports = {
   entry: {
-    examples: ['./examples/index.js']
+    examples: ["./examples/index.js"]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ],
   output: {
-    path: path.resolve(__dirname, 'examples'),
-    publicPath: '/examples/',
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "examples"),
+    publicPath: "/examples/",
+    filename: "bundle.js"
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: [".js", ".jsx"]
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loader: ['react-hot-loader', 'babel-loader'],
-      exclude: /build|scripts|node_modules/
-    }]
+    loaders: [
+      {
+        test: /\.js?$/,
+        loader: ["react-hot-loader", "babel-loader"],
+        exclude: /build|scripts|node_modules/
+      }
+    ]
   }
-}
+};

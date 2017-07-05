@@ -1,12 +1,12 @@
-.KeyList .Item {
+.key-list .item {
   width: 100%;
 }
-.KeyList .Item input {
+.key-list .item input {
   width: 172px;
   height: 20px;
   margin-right: 5px;
 }
-.KeyList .Item button {
+.key-list .item button {
   width: 30px;
   height: 24px;
   font-size: 18px;
