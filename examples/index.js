@@ -5,7 +5,6 @@ import KeyList from "../src/react-kv-list";
 
 class KeyValueListExample extends Component {
   constructor(props) {
-    console.log("dcsdcsdcsdsdcsds");
     super(props);
     this.state = {
       tags: []

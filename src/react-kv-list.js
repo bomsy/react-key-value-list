@@ -43,7 +43,7 @@ class KeyList extends Component {
 
   render() {
     const { items } = this.state;
-
+    const { separator } = this.props;
     return (
       <div className="key-list">
         {items.map((item, index) =>
@@ -51,13 +51,16 @@ class KeyList extends Component {
             <input
               className="key"
               value={item.key}
-              placeholder=" -- enter key --"
+              placeholder=" - enter key - "
               onChange={event => this.handleChange(event, index, "key")}
             />
+            <span>
+              {separator || ":"}
+            </span>
             <input
               className="value"
               value={item.value}
-              placeholder=" -- enter value --"
+              placeholder=" - enter value - "
               onChange={event => this.handleChange(event, index, "value")}
             />
             {index === 0
